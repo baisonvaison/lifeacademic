@@ -1,0 +1,45 @@
+<body>
+
+<nav>
+
+  <%= render partial: "render/common_nav" %>
+
+</nav>
+
+  <div class="container-fluid">        <!-- 全体を囲むコンテナ -->
+
+    <div class="jumbotron nav_subtitle_picture"
+    style="background-image: url(<%= asset_path "news/News-background.jpg"%>); background-size:1790px 630px;">
+    <h1 class="text-center" style="font-size: 63px;"><strong>News</strong></h1>
+    </div>
+
+  </div>
+
+<div class="container">
+
+ <div class="row ">
+   <div class="col-md-12">
+     <div class="row">
+       <div class="col-md-9">
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/news/News-insect-exhibition.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>「昆虫展」開催中！</strong></h3>
+             <p class="card-text">イベントの案内です！（昆虫好きの方）<br>
+            現在、国立科学博物館で7月13日から10月8日まで昆虫展が開催されています！！<br>
+            実際に昆虫展に行ってきたので簡単に見どころを紹介して見たいと思います。</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/news/news1.html' %></h5>
+           </div>
+         </div>
+
+       </div>
+
+       <%= render partial: "render/common_popular" %>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+
+</body>

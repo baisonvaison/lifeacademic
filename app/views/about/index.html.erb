@@ -1,0 +1,41 @@
+<body>
+
+<nav>
+
+<%= render partial: "render/common_nav" %>
+
+</nav>
+
+<div class="container-fluid">        <!-- 全体を囲むコンテナ -->
+
+  <div class="jumbotron nav_subtitle_picture"
+    style="background:url(<%= asset_path "about/About-background.jpeg" %>); background-size:cover;">
+    <h1 class="text-center" style="font-size: 63px;"><strong>What is Life Academic?</strong></h1>
+  </div>
+
+  <div>
+    <p class="text-center fade-in" style="opacity:0; font-size: 26px;">Life Academicでは、<br>日常で感じた違和感や発見、驚きを伝えると共に、<br>思わず誰かに話したくなるような出来事をアカデミックに掲載していく個人ブログです。<br>
+    記事を読めば、明日の自分とはちょっと違う、少しアカデミックな人になっているかもしれません。</p>
+  </div>
+
+</div>
+
+
+<div class="container">        <!-- 全体を囲むコンテナ -->
+
+  <div class="card">
+    <h4 class="card-header bg-info text-white">編集者：Visone</h4>
+    <div class="card-body">
+      <img src="/assets/about/TheScream.jpg" class="float-md-left mr-md-4" style="width:200px;margin-right:15px;">
+      <h4 class="card-title">< Introduction ></h4>
+      <p class="card-text">1992年生まれ。アカデミックな知識と発見を求め日々活動中。</p>
+      <h4>< 趣味 ></h4>
+      <p>スポーツ、本、マンガ、床張り、ゲーム、旅行、博物館巡りなど。</p>
+      <p>雑学と文献を漁るのが好き。</p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>

@@ -1,0 +1,52 @@
+<body>
+
+<nav>
+
+  <%= render partial: "render/common_nav" %>
+
+</nav>
+
+  <div class="container-fluid">        <!-- 全体を囲むコンテナ -->
+
+    <div class="jumbotron nav_subtitle_picture"
+    style="background-image: url(<%= asset_path "Book/Book-background.jpg"%>); background-size:1280px 300px;">
+    <h1 class="text-center" style="font-size: 63px;"><strong>Book</strong></h1>
+    </div>
+
+  </div>
+
+<div class="container">
+
+ <div class="row ">
+   <div class="col-md-12">
+     <div class="row">
+       <div class="col-md-9">
+
+        <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Book/Book-convenience-human.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>コンビニ人間</strong></h3>
+             <p class="card-text">36歳未婚女性、古倉恵子。大学卒業後も就職せず、コンビニのバイトは18年目。これまで彼氏なし。オープン当初からスマイルマート日色駅前店で働き続け、変わりゆくメンバーを見送りながら、店長は8人目だ。日々食べるのはコンビニ食、夢の中でもコンビニのレジを打ち、清潔なコンビニの風景と「いらっしゃいませ!」の掛け声が、毎日の安らかな眠りをもたらしてくれる。</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/book/book2.html' %></h5>
+           </div>
+         </div>
+
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Book/Book-sabaku.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>砂漠</strong></h3>
+             <p class="card-text">入学した大学で出会った5人の男女。ボウリング、合コン、麻雀、通り魔犯との遭遇、捨てられた犬の救出、超能力対決……。共に経験した出来事や事件が、互いの絆を深め、それぞれを成長させてゆく。自らの未熟さに悩み、過剰さを持て余し、それでも何かを求めて手探りで先へ進もうとする青春時代。</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/book/book1.html' %></h5>
+           </div>
+         </div>
+       </div>
+
+       <%= render partial: "render/common_popular" %>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+
+</body>

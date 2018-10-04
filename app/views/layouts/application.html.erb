@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124724691-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124724691-1');
+  </script>
+
+  <title>Life Academic</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gaegu|Kaushan+Script" rel="stylesheet">
+  <%= javascript_include_tag 'application' %>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+
+ <header>
+    <div class="jumbotron"
+    style="color:#FFF; margin-bottom: 15px; background:url(<%= asset_path "common/home-background.jpg" %>); background-size:1300px 300px; padding: 80px;">
+    <p class="text-center" style=";font-family: 'Fredericka the Great', cursive; font-size: 63px;"><strong>Life Academic</strong></p>
+
+</header>
+
+<body>
+
+
+<%= yield %>
+
+<footer class="page-footer text-center" role="contentinfo">
+    <button type="button" class="back-to-top">
+        <i class="fas fa-angle-up" style="color:#000000; font-size: 50px;"></i>
+    </button>
+
+    <div class="footer-nav">
+      <p>© 2018 Life Academic All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>

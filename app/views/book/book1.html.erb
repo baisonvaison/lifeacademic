@@ -1,0 +1,72 @@
+<body>
+
+<nav>
+
+  <%= render partial: "render/common_nav" %>
+
+</nav>
+
+<div class="container" style="margin-top: 15px;">
+ <div class="row ">
+   <div class="col-md-12">
+     <div class="row">
+       <div class="col-md-9" style="margin-bottom: 15px;">
+        <div class="card" style="background: #e9e9e9;">
+          <div class="card-body">
+            <div class="jumbotron nav_nav_subtitle_picture"
+            style="background-image: url(<%= asset_path "common/article-background.jpg"%>); background-size:1500px 250px;">
+            <div class="text-center" style="font-size: 60px;"><strong>Book</strong></div>
+          </div>
+          <h1 class="text-center"><strong>砂漠</strong></h1>
+          <span class="subtitle text-center"><strong>著者：伊坂幸太郎</strong></span>
+          <p class="card-text">
+            <div class="article_nav_content">
+              <article class="article_margin">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;入学した大学で出会った5人の男女。ボウリング、合コン、麻雀、通り魔犯との遭遇、捨てられた犬の救出、超能力対決……。共に経験した出来事や事件が、互いの絆を深め、それぞれを成長させてゆく。自らの未熟さに悩み、過剰さを持て余し、それでも何かを求めて手探りで先へ進もうとする青春時代。二度とない季節の光と闇をパンクロックのビートにのせて描く、爽快感溢れる長編小説。<br>（Ａｍａｚｏｎ「内容紹介」より）</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;冒頭の「内容紹介」にもあるように、「砂漠」は大学時代をテーマに話が展開していく青春小説だ。
+                チャラくてやんちゃな鳥井、超能力が使える南、めちゃくちゃ美人な東堂、いつでもまじめで熱い西嶋。そして、鳥井から俯瞰型人間と言われる主人公北村（鳥井いわく冷めた人を指すらしい）。この個性豊かな5人を中心にドラマが進んでいくわけだが、中でも、不器用だけど、どんなことにも真剣でひたむきな西嶋を特にかっこいいと思ってしまう。（以下西嶋のセリフ紹介）</p><br>
+                <div class="text_quotation"><p>「その気になればね、砂漠に雪を降らすことだって、余裕でできるんですよ」</p></div>
+                <div class="text_quotation"><p>「この国の大半の人間たちはね、馬鹿を見ることを恐れて、何にもしないじゃないですか。馬鹿を見ることを死ぬほど恐れている、馬鹿ばっかりですよ」</p></div>
+                <div class="text_quotation"><p>「人に訴えても伝わないんだからね、もう別の物に分かってもらうしかないんですよ。ピンフをね、何度も上がることで、こっちの本気度合いをしつこく、分からせるわけですよ」</p></div><br>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;こんな青臭いセリフを吐いても、「ダサい」とか「バカな奴」だとか思わないのは、夢物語だと思われるようなことを、いつも必死でやり遂げようとする西嶋の言動が一致しているからだろう。（自分が女性だったら、間違いなく惚れてる（笑））</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;そんな5人が青春を謳歌している姿を思い浮かべると、ある種の清々しさと（中には悲惨な事件もあるけど）、2度とあの頃には戻れない絶望感に、私は涙してしまうのだ。</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;そんな者に向けてなのか、物語の終盤に差し掛かると、学長が卒業式を迎えた5人と卒業生に向けてこう語る。
+                 「学生時代を思い出して懐かしがるのは構わないが、あの時は良かったな、オアシスだったな、と逃げるような
+               ことは絶対に考えるな。そういう人生を送るなよ。」</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;大学を卒業して以来、「学生の時にああしていればよかったなあ」と追憶する私には、まさに耳に痛い警句なのだ。</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;大学生と青春時代をもう一度振り返りたい社会人にお勧めの図書です。</p>
+             </article>
+             <div class="main_article" >
+              <div class="nav_article_picture  text-center hover_opacity" >
+                <a href="https://www.amazon.co.jp/砂漠-新潮文庫-伊坂-幸太郎/dp/4101250251/ref=sr_1_1?ie=UTF8&qid=1532761287&sr=8-1&keywords=砂漠%E3%80%80伊坂" target="_blank">
+                  <img src="book_images/71hyssTlP6L.jpg" alt="" style="width:230px; height: 300px; margin-top: 20px;" >
+                </div>
+                <p class="float_clear text-center" style="margin-top: 5px;">2010/6/29 出版（新潮社）</p>
+              </a>
+            </div>
+            <br>
+          </div>
+        </p>
+      </div>
+      <div class="card-footer text-right" style="">Update 2018/8/28</div>
+    </div>
+  </div>
+
+<%= render partial: "render/common_popular" %>
+
+</div>
+</div>
+</div>
+</div>
+
+<%= render partial: "render/common_pagination_book_1" %>
+
+  </body>
+
+  </html>

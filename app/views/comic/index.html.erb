@@ -1,0 +1,41 @@
+<body>
+
+  <nav>
+
+    <%= render partial: "render/common_nav" %>
+
+  </nav>
+
+  <div class="container-fluid">        <!-- 全体を囲むコンテナ -->
+
+    <div class="jumbotron nav_subtitle_picture"
+    style="background-image: url(<%= asset_path "Comic/Comic-background.png"%>); background-size:1280px 400px;">
+    <h1 class="text-center" style="font-size: 63px;"><strong>Comic</strong></h1>
+    </div>
+
+  </div>
+
+<div class="container">
+
+ <div class="row ">
+   <div class="col-md-12">
+     <div class="row">
+       <div class="col-md-9">
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Comic/TheScream.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;  ">
+             <h4 class="card-title">Coming Soon</h4>
+           </div>
+         </div>
+
+       </div>
+
+       <%= render partial: "render/common_popular" %>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+
+</body>

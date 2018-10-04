@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <nav>
+       <ul class="nav nav-tabs nav-justified flex-column flex-sm-row">
+          <li class="nav-item nav-link"><%= link_to 'HOME', '/academic', :class => current_class?(academic_path) %></li>
+          <li class="nav-item nav-link"><%= link_to 'ABOUT', '/about', :class => current_class?(about_path) %></li>
+          <li class="nav-item nav-link"><%= link_to 'ESSAY', '/essay', :class => current_class?(essay_path) %></li>
+          <li class="dropdown nav-item">
+            <a href="#" class="nav-link">BOOK & MOVIE</a>
+            <ul class="dropdown-menu" style="width: 100%;">
+              <li class="nav-item nav-link" style="text-align: center; display: block;"><%= link_to 'BOOK', '/book'%></li>
+              <li class="nav-item nav-link" style="text-align: center; display: block;"><%= link_to 'COMIC', '/comic' %></li>
+              <li class="nav-item nav-link" style="text-align: center; display: block;"><%= link_to 'MOVIE', '/movie' %></li>
+          </ul>
+          </li>
+      <li class="nav-item nav-link"><%= link_to 'NEWS', '/news' %></li>
+      <li class="nav-item nav-link"><%= link_to 'CONTACT', '/contact' %></li>
+  </ul>
+</nav>
+</div>

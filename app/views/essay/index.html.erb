@@ -1,0 +1,91 @@
+<body>
+
+<nav>
+
+<%= render partial: "render/common_nav" %>
+
+</nav>
+
+  <div class="container-fluid">        <!-- 全体を囲むコンテナ -->
+
+    <div class="jumbotron nav_subtitle_picture"
+    style="background-image: url(<%= asset_path "Essay/Essay-background.jpg"%>); background-size:1280px 300px;">
+    <h1 class="text-center" style="font-size: 63px;"><strong>Essay</strong></h1>
+    </div>
+
+  </div>
+
+<div class="container">
+
+ <div class="row ">
+   <div class="col-md-12">
+     <div class="row">
+       <div class="col-md-9">
+        <div class="card" style="margin-bottom: 20px;">
+
+           <div class="card-body">
+             <img src="/assets/Essay/Essay-DeathWorld.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>死後の世界は存在するのか？</strong></h3>
+             <p class="card-text">「あらゆる生あるものの目指すところは死である」<br>
+             これは、精神医学者ジークムント・フロイトが残した言葉だ。<br>
+             人は死んだ後どうなるのだろうか？<br>
+             何も早死にしたいわけではない、これは私が長年疑問を抱いているテーマであり、皆さんも一度は死後の世界について思いを馳せたことはあるのではないだろうか？</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/essay/essay6.html' %></h5>
+           </div>
+         </div>
+        <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Essay/Essay-AmazingGrace.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>「アメイジング・グレイス」と「ジョン・ニュートン」</strong></h3>
+             <p class="card-text">先日、友人と話をしていた時に話題が音楽の話となり、「一番好きな歌は何？」と聞かれた。 「一番好きな歌…好きな歌と言われても、歌詞・曲調・リズムとか、一つ一つの歌に対する思い入れはそれぞれだから、ランクなんてつけられないんじゃない」と思い・・・</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/essay/essay5.html' %></h5>
+           </div>
+         </div>
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Essay/Essay-time-thief.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>時間泥棒の正体</strong></h3>
+             <p class="card-text">カチャカチャカチャ…ポチ…カチャ…カチャ…カチャ………。<br>
+            「ピーンポーン」<br>
+              私「！？」<br>
+              スタッフA「時刻は間もなくして、22時となり、閉館時刻となります。ご用のある方は、お早めにお願いします」</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/essay/essay4.html' %></h5>
+           </div>
+         </div>
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Essay/Essay-Riemann-hypothesis.jpg" class="float-md-left mr-md-4" style="height:200px; width: 300px;">
+             <h3 class="card-title" style="color: #993300;"><strong>「素数大富豪」と「リーマン予想」</strong></h3>
+             <p class="card-text">最近、はまっているカードゲームがある。その名も「素数大富豪」。このゲームはニコニコ超会議に参加した時の催しで初めて知ったのだが、思った以上に面白い。<br>
+                        ルール自体は「大富豪」と変わらないが、出すカードをすべて素数に限定するという恐ろしく頭を使うゲームなのだ。</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/essay/essay1.html' %></h5>
+           </div>
+         </div>
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Essay/Essay-shonen-jump.jpg" class="float-md-left mr-md-4" style="height:200px; width: 150px; object-fit: cover; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>「ジャンプ展」と「日本人のマンガ脳」</strong></h3>
+             <p class="card-text">現在、六本木の森ビルでジャンプ展が開催されている。ワンピース・ナルト・HUNTER×HUNTERなど、少年ジャンプを彩る漫画作品の原画が数多く展示されている。マンガ好きである私は勿論、このジャンプ展に足を運んで鑑賞に浸るわけだが、何も面白い漫画はジャンプ漫画だけに限った話ではないだろう。</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/essay/essay2.html' %></h5>
+           </div>
+         </div>
+         <div class="card" style="margin-bottom: 20px;">
+           <div class="card-body">
+             <img src="/assets/Essay/Essay-tv-introduction.jpg" class="float-md-left mr-md-4" style="height:200px; width: auto; display: block; margin: auto;">
+             <h3 class="card-title" style="color: #993300;"><strong>アカデミックTV紹介</strong></h3>
+             <p class="card-text">今年の3月、私が愛して止まないTV番組「モーガン・フリーマン 時空を超えて」の再放送が終わってしまった。この番組は、誰もが疑問に思っているけれど、答えが出ていないテーマ（死後の世界や時間の概念、宇宙人の存在とか）に、第一線で活躍する研究者が掘り下げて持論を展開していく放送内容だ。</p>
+             <h5 class="card-title text-center"><%= link_to '続きを読む', '/essay/essay3.html' %></h5>
+           </div>
+         </div>
+
+       </div>
+
+       <%= render partial: "render/common_popular" %>
+
+     </div>
+   </div>
+ </div>
+</div>
+
+
+</body>
