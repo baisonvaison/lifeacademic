@@ -14,8 +14,8 @@
   <title>Life Academic</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gaegu|Kaushan+Script" rel="stylesheet">
-
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <%= csrf_meta_tags %>
 </head>
@@ -33,8 +33,10 @@
 <%= yield %>
 
 <footer class="page-footer text-center" role="contentinfo">
-    <button type="button" class="back-to-top">
+    <button class="back-to-top">
+      <a href="#" data-scroll>
         <i class="fas fa-angle-up" style="color:#000000; font-size: 50px;"></i>
+      </a>
     </button>
 
     <div class="footer-nav">
@@ -46,6 +48,46 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript" charset="utf-8" async defer>
+
+
+$(window).on('load',function(){
+
+  // fade-in
+    $(window).scroll(function (){
+        $('.fade-in').each(function(){
+            var POS = $(this).offset().top;  //fade-inがついている要素の位置
+            var scroll = $(window).scrollTop();  //スクロール一
+            var windowHeight = $(window).height();  //ウィンドウの高さ
+
+            if (scroll > POS - windowHeight + windowHeight/2.0){
+                $(this).css("opacity","1" );
+            } else {
+                $(this).css("opacity","0" );
+            }
+        });
+    });
+});
+
+
+    /*
+     * Back-toTop button (Smooth scroll)
+     */
+    // $(document).on('click','.back-to-top', function(){
+    //     // Smooth Scroll プラグインを実行
+    //     $.smoothScroll({
+    //         easing: 'easeOutExpo', // イージングの種類
+    //         speed: 500             // 所要時間
+    //     });
+    // });
+
+
+
+
+</script>
+
 </body>
+
 
 </html>
